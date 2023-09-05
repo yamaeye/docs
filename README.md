@@ -71,6 +71,3 @@
     </td>
 </tr>
 </tbody></table>
-=======
-# docs
->>>>>>> 4c73e8802a9f8fad12f590ed156be93b90dff506

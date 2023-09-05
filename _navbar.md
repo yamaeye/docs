@@ -17,8 +17,8 @@
   - [🍰 生活](/生活/)
 
 - ⛩️ 传送门
-  - [✒️ 摘录](https://yamaeye.netlify.app)
-  - [📰 剪报](https://115000.pages.dev)
-  - [🎬 图库](https://sophie-eden.pages.dev)
+  - [✒️ 摘录](https://yamaeye.pages.dev/newspaper/public/)
+  - [📰 剪报](https://yamaeye.pages.dev/city/public/)
+  - [🎬 图库](https://sophie-eden.pages.dev/)
   
 - [🏰 首页](/)

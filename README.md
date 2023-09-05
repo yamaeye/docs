@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <table>
 <tbody><tr valign="top">
     <td width="25%">

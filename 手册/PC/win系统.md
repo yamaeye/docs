@@ -172,7 +172,7 @@ Cloudflare|time.cloudflare.com
 6. 以x64为为例，`Ctrl+F`分别搜索`x64__8wekyb3d8bbwe.appx``8wekyb3d8bbwe.appxbundle`
 7. 需要下载5个应用程序，前四个下载文件拓展名为`.appx`的，最后一个下载文件拓展名`.appxbundle`的（`appxbundle`的下载最后一个）
 
-![100000000431.png](/img/pc/Microsoft.WindowsStore_8wekyb3d8bbwe.jpg)
+![100000000431.png](https://yamaeye.github.io/docs/img/pc/Microsoft.WindowsStore_8wekyb3d8bbwe.jpg)
 
 8. 将下载的5个文件放到一个文件夹中，在文件夹中按住`shift键`，右键选择`在此处打开PowerShell窗口`
 9. 在PowerShell中输入`Add-AppxPackage *`进行安装，此操作将自动将4个appx和1个appxbundle进行安装
@@ -189,7 +189,7 @@ Cloudflare|time.cloudflare.com
 <img src="https://exp-picture.cdn.bcebos.com/3ac71c214f5793562899d197effb960b302170b9.jpg" alt="共享文件夹" width=400>
 3. 输入`everyone`，点击`添加`。
 
-<img src="/img/pc/共享用户.png" alt="共享用户" width=500>
+<img src="https://yamaeye.github.io/docs/img/pc/共享用户.png" alt="共享用户" width=500>
 4. 权限级别勾选`读取/写入`，再点击下方`共享`。
 
 <img src="https://exp-picture.cdn.bcebos.com/18aebc5f0c14c27b6a94233f2a46b7b1eff939ad.jpg" alt="读取/写入" width=500>
@@ -210,7 +210,7 @@ Cloudflare|time.cloudflare.com
 <img src="https://exp-picture.cdn.bcebos.com/82eff6d7592ae3ef675a3d8654b6326c566664b9.jpg" alt="网络和共享中心-所有网络" width=500>
 10. 在同一局域网下的另一台电脑上，打开`此电脑`窗口，点击上方的`添加一个网络位置`选项。
 
-<img src="/img/pc/添加网络位置.png" alt="添加网络位置" width=500>
+<img src="https://yamaeye.github.io/docs/img/pc/添加网络位置.png" alt="添加网络位置" width=500>
 11. 点击下一步后，在`指定网站的位置`中，粘贴从第5步：共享文件夹复制的`网络路径`，之后继续下一步即可。
 
 [映射网络驱动盘：开机不需输入密码](https://www.cnblogs.com/duanjt/p/5362159.html)
@@ -232,9 +232,9 @@ net use z: \\172.23.88.107\wifi系统发布 /user:administrator 123456
 
 2. 打开`网络和共享中心`—`高级共享设置`—`专用`、`所有网络`
 
-<img src="/img/pc/专用.jpg" alt="专用" width=500><br/>
+<img src="https://yamaeye.github.io/docs/img/pc/专用.jpg" alt="专用" width=500><br/>
 
-<img src="/img/pc/所有网络.jpg" alt="所有网络" width=500>
+<img src="https://yamaeye.github.io/docs/img/pc/所有网络.jpg" alt="所有网络" width=500>
 3. 右键文件夹属性，设置分享。
 
 4. 查看本机IP地址。

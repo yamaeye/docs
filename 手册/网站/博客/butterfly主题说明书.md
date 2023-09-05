@@ -97,7 +97,7 @@ class_desc: 那些人，那些事
 link_list:
 
 
-- name: JerryClink: https://jerryc.me/avatar: https://jerryc.me/img/avatar.pngdescr: 今日事,今日毕
+- name: JerryClink: https://jerryc.me/avatar: https://jerryc.mehttps://yamaeye.github.io/docs/img/avatar.pngdescr: 今日事,今日毕
 
 
 - name: Hexolink: https://hexo.io/zh-tw/avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svgdescr: 快速、简单且强大的网誌框架

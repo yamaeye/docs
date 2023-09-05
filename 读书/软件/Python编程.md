@@ -1,7 +1,7 @@
 <table>
 <tr>
 <td>
-<img src="/img/books/Python编程.jpg" width=200px />
+<img src="https://yamaeye.github.io/docs/img/books/Python编程.jpg" width=200px />
 </td>
 <td>
 <p>

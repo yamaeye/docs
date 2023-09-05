@@ -170,9 +170,9 @@ yay -S todesk-bin
 #### [应用商店](https://www.jianshu.com/p/a4d54fc6d288)
 
 1. 可更换软件源
-![更换软件源](/img/pc/更换软件源.png)
+![更换软件源](https://yamaeye.github.io/docs/img/pc/更换软件源.png)
 2. 可开启AUR源
-![开启AUR源](/img/pc/开启AUR源.png)
+![开启AUR源](https://yamaeye.github.io/docs/img/pc/开启AUR源.png)
 
 #### pacman
 

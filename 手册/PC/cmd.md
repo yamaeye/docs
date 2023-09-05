@@ -152,7 +152,7 @@ start ""
 
 想要解决这个问题，就要用到`mklink`（创建符号链接）命令了，命令需要在`cmd`（命令提示符）中使用，需要`管理员权限`。
 
-<img src="/img/pc/命令格式.jpg" alt="命令格式" width=500>
+<img src="https://yamaeye.github.io/docs/img/pc/命令格式.jpg" alt="命令格式" width=500>
 当路径中间有空格时，需要将整个路径加引号。
 
 `NTFSLinksView`：查看系统中的符号链接和目录联接。windows很多地方都使用Junction（目录联接），例如“开始菜单”、“我的文档”等。

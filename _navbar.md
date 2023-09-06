@@ -18,7 +18,8 @@
 
 - ⛩️ 传送门
   - [✒️ 摘录](https://yamaeye.pages.dev/newspaper/public/)
-  - [📰 剪报](https://yamaeye.pages.dev/city/public/)
+  - [📰 讯息](https://yamaeye.pages.dev/city/public/)
   - [🎬 图库](https://sophie-eden.pages.dev/)
+  - [🎪 杂货](https://goodlucky.pages.dev/)
   
 - [🏰 首页](/)

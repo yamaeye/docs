@@ -18,6 +18,14 @@
 ```
 2. 删除或者重命名文件`f01b4d95cf55d32a.automaticDestinations-ms`
 
+### [WINDOW 活动窗口不能显示到最前端](https://blog.csdn.net/a_small_mouse/article/details/48752765)
+
+1. 打开注册表，找到`HKEY_CURRENT_USER\Control Panel\Desktop`
+2. `Foreground Flash Count`的key恢复到默认值3
+3. `Foreground Lock timeout`的key恢复到默认值200000
+4. 重启应用程序或操作系统
+
+
 ---
 
 ## 账户

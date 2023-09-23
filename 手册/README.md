@@ -13,7 +13,7 @@
     <a style="font-size:20px", href="#/手册/">手册</a>
     </td>
     <td width="20%">
-    <a style="font-size:20px", href="#/手册/语言/">语言</a>
+    <a style="font-size:20px", href="#/手册/词库/">词库</a>
     </td>
 </tr>
 <tr valign="top">
@@ -35,12 +35,12 @@
     </td>
     <td width="20%">
     <p>
-    <a href="#/手册/工具.md">工具</a> | <a href="#/手册/数学.md">数学</a><br/>
+    <a href="#/手册/工具.md">工具</a> | <a href="#/手册/数学.md">数学</a> | <a href="#/手册/占星/">占星</a><br/>
     </p>
     </td>
     <td width="20%">
     <p>
-    <a href="#/手册/语言/符号.md">符号</a><br/>
+    <a href="#/手册/词库/符号.md">符号</a> | <a href="#/手册/词库/甲骨文.md">甲骨文</a><br/>
     </p>
     </td>
 </tr>

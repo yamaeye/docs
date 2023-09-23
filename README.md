@@ -6,7 +6,7 @@
     </h5>
     <p>
     <a href="#/读书/学习/认知天性.md">认知天性</a> | <a href="#/读书/学习/刻意练习.md">刻意练习</a> | <a href="#/读书/学习/超级学习者.md">超级学习者</a> | <a href="#/读书/学习/为什么学生不喜欢上学.md">为什么学生不喜欢上学</a><br>
-    <a href="#/读书/神秘/秘密.md">秘密</a> | <a href="#/读书/神秘/内在的天空.md">内在的天空</a> | <a href="#/读书/神秘/人生的十二个面向.md">人生的十二个面向</a><br>
+    <a href="#/读书/神秘/秘密.md">秘密</a> | <a href="#/读书/神秘/人生的十二个面向.md">人生的十二个面向</a><br>
     </p>
     </td>
     <td width="25%">
@@ -49,7 +49,7 @@
     <a href="#/手册/网站/博客/hexo.md">Hexo</a> | <a href="#手册/网站/博客/butterfly主题说明书.md">butterfly主题</a> | <a href="#/手册/网站/博客/hugo.md">Hugo</a> | <a href="#/手册/网站/博客/docsify.md">Docsify</a><br/>
     <a href="#/手册/开发/Github.md">Github</a> | <a href="#/手册/开发/VScode.md">VS code</a> | <a href="#/手册/开发/npm.md">npm</a><br>
     <a href="#/手册/PC/win系统.md">win系统</a> | <a href="#/手册/PC/cmd.md">cmd</a> | <a href="#/手册/PC/浏览器.md">浏览器</a> | <a href="#/手册/PC/软件/">软件</a><br>
-    <a href="#/手册/语言/符号.md">符号</a> | <a href="#/手册/数学.md">数学</a><br>
+    <a href="#/手册/数学.md">数学</a> | <a href="#/手册/词库/">词库</a> | <a href="#/手册/占星/">占星</a><br>
     </p>
     </td>
     <td width="25%">

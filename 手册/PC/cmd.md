@@ -1,23 +1,4 @@
-### [批量修改文件后缀](https://blog.csdn.net/qq_58956184/article/details/122384496)
-
-1. 在需要批量修改后缀的文件所在文件夹内新建一个文本文档。
-
-2. 在文档内输入：
-
-```
-ren *.txt *.xml
-```
-
-`.txt`：修改后缀前的文件格式。
-
-`.xml`：修改后缀后的文件格式。
-
-`*`前有一个`空格`。
-
-
-3. 保存文本文档，并将其后缀改为`.bat`，双击运行该文本文档即可。
-
----
+## 设置
 
 ### [激活administrator账户](https://jingyan.baidu.com/article/8065f87f454d97233124989f.html)
 
@@ -41,8 +22,6 @@ net user abcdef 123456 /add
 net localgroup administrators abcdef /add
 ```
 
----
-
 ### [设置休眠选项](https://jingyan.baidu.com/article/54b6b9c0fc2d0b2d593b4764.html)
 
 1. 右键开始菜单，选择命令提示符（管理员）
@@ -55,33 +34,6 @@ powercfg /a
 3. 如果休眠未打开，继续输入命令：
 ```
 powercfg -h on
-```
-
----
-
-### [批量修改文件权限](https://www.cuanjibang.com/zjjc/85204.html)
-
-命令提示符（管理员）：
-
-```
-icacls "E:\文件夹路径\*.*" /grant Everyone:(F)
-```
-
-F：代表最高权限（完全控制）
-
-用户组：Everyone、SYSTEM等
-
-
----
-
-### [强制删除文件夹](https://baijiahao.baidu.com/s?id=1613359113025994635&wfr=spider&for=pc)
-
-删除文件夹时提示`错误 0x80070091：目录不是空的。`
-
-在同一目录下，新建一个文本文档，更改扩展名为`.bat`，双击运行：
-
-```
-rmdir 文件夹名称.\/s
 ```
 
 ### [查询系统变量](https://blog.csdn.net/Maxiao1204/article/details/122545615)
@@ -101,8 +53,6 @@ rmdir 文件夹名称.\/s
 %ProgramFiles% | C:\Program Files
 %ProgramFiles(x86)% | C:\Program Files (x86)
 
----
-
 ### [查询电脑型号](https://zhidao.baidu.com/question/689570728537300852.html)
 
 方法一：
@@ -114,8 +64,6 @@ rmdir 文件夹名称.\/s
 
 1. 运行快捷键`Win + R`，输入`cmd`后回车。
 2. 输入`systeminfo`后回车，查看型号。
-
----
 
 ### [电脑双开微信](https://jingyan.baidu.com/article/eb9f7b6d8eeea1c79264e80c.html)
 
@@ -142,7 +90,50 @@ start ""
 
 两个微信登录框是重叠在一起的，把上面的登录框挪开就可以看到两个登录框了。
 
----
+## 文件
+
+### [批量修改文件后缀](https://blog.csdn.net/qq_58956184/article/details/122384496)
+
+1. 在需要批量修改后缀的文件所在文件夹内新建一个文本文档。
+
+2. 在文档内输入：
+
+```
+ren *.txt *.xml
+```
+
+`.txt`：修改后缀前的文件格式。
+
+`.xml`：修改后缀后的文件格式。
+
+`*`前有一个`空格`。
+
+
+3. 保存文本文档，并将其后缀改为`.bat`，双击运行该文本文档即可。
+
+
+### [批量修改文件权限](https://www.cuanjibang.com/zjjc/85204.html)
+
+命令提示符（管理员）：
+
+```
+icacls "E:\文件夹路径\*.*" /grant Everyone:(F)
+```
+
+F：代表最高权限（完全控制）
+
+用户组：Everyone、SYSTEM等
+
+
+### [强制删除文件夹](https://baijiahao.baidu.com/s?id=1613359113025994635&wfr=spider&for=pc)
+
+删除文件夹时提示`错误 0x80070091：目录不是空的。`
+
+在同一目录下，新建一个文本文档，更改扩展名为`.bat`，双击运行：
+
+```
+rmdir 文件夹名称.\/s
+```
 
 ### [使用mklink命令给C盘软件搬家](https://baijiahao.baidu.com/s?id=1722716051189739192&wfr=spider&for=pc)
 

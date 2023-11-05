@@ -197,11 +197,150 @@ docker push registry.cn-hangzhou.aliyuncs.com/你自己的镜像仓库地址:myc
 docker pull registry.cn-hangzhou.aliyuncs.com/你自己的镜像仓库地址:mycentos_V3_SSH
 ```
 
----
+### 
 
-### 镜像推荐
 
-1. 开发用的镜像：[smiecj/docker-centos](https://github.com/smiecj/docker-centos)
+
+
+## 配置容器参数
+
+@[乐意李](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247484705&idx=1&sn=44051505f8c18bbcbc680c5d48323787&chksm=c25e8657f5290f411d17063d8bf68c35ec4a02ed430b9f2e769d73a7f598c84af40547d98642&scene=178&cur_album_id=2893630619191214084#rd)：
+
+可以从docker库的源地址查看原作者的相关文档，找到`docker run`开头的部分或`yml`配置，快速查看相关的命令和参数。
+
+网络大部分`bridge`即可，少部分docker必须配置`host`。
+
+### 存储空间
+
+```
+-v $PWD/ql:/ql/data \
+```
+
+- `-v`代表后面是需要配置的路径。
+- `:`之前的`$PWD/ql`是自定义设定的内部路径，选择自己创建的文件或者文件夹即可。
+- `:`后面的`/ql/data`需要完整复制，对应容器存储的装载路径。
+- 最后面的`\`不要一并复制进参数框里。
+
+### 端口设置
+
+```
+-p '8096:8096' \
+-p '8920:8920' \
+-p '1900:1900/udp' \
+-p '7359:7359/udp' \
+```
+
+- `-p`代表后面是需要配置的端口号。
+- `:`之前的`8096`是自定义的本地端口号，不能填写如`80/443`这种会被屏蔽的端口号；不能填写其他docker用过的端口号，否则无法启动；也可以什么都不填写，让系统自动配置。
+- `:`后面的`8096`需要完整复制，对应映射容器内部的端口号，不能改动。
+- `/udp`代表需要填写的端口类型为`udp`，默认不写则选择`tcp`。
+
+### 环境变量
+
+```
+-e UID=0 \
+-e GID=0 \
+-e GIDLIST=0 \
+-e TZ="Asia/Shanghai" \
+-e HTTP_PROXY="http://你的代理IP:你的代理端口/" \
+```
+
+- `-e`代表后面是需要配置的环境变量。
+- `=`之前的`TZ`是环境变量的名字，必须保留大小写字母的严格复制，不能做任何改动。
+- `=`后面的`Asia/Shangha`对应环境变量下的值，绝大多数情况下都是严格复制，极少部分可以根据实际情况配置适合自己使用的值。
+- `"`只是提示，实际在配置过程中，是不需要复制进去的。
+
+## 镜像推荐
+
+### 域名解析：DDNSgo
+
+
+镜像名称：`jeessy/ddns-go`
+
+```bash
+docker run -d --name ddns-go --restart=always --net=host -v /opt/ddns-go:/root jeessy/ddns-go
+```
+
+端口号：9876
+
+支持的域名服务商：Alidns(阿里云)、Dnspod(腾讯云)、Cloudflare 华为云、Callback 百度云、Porkbun、GoDaddy、Google Domain
+
+>**来源：**
+>[绿联NAS私有云部署DDNS-GO实现域名访问](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488261&idx=1&sn=24fa0ab5c32eb354569d45d3875aa6b3&chksm=c25e9073f52919655b09f53cdc0305f3e95acc0366fea3e95390fce3efee1bfb1d807778cbc2&scene=178&cur_album_id=2893630619191214084#rd)
+
+### Nginx
+
+镜像名称：`chishin/nginx-proxy-manager-zh`
+
+默认管理员信息：
+
+```
+Email:    admin@example.com
+Password: changeme
+```
+
+端口号+存储路径：
+
+```
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - '80:80' # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81' # Admin Web Port
+      # Add any other Stream port you want to expose
+      # - '21:21' # FTP
+      
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+
+```
+
+
+>**来源：**
+>[绿联私有云NAS安装 Nginx反向代理服务器 Nginx Proxy Manager | HTTPS | 高效 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488330&idx=1&sn=a234274a23b2d32ba9d4b44d15419c00&chksm=c25e903cf529192a0be8d8cc5865fe0a5baae3e01d7c46055fb7b2f421d3c760296ff52465e4&scene=178&cur_album_id=2893630619191214084#rd)
+
+### 宝塔
+
+镜像名称：`kangkang223/baota`
+
+网络：host 模式
+
+挂载目录：
+- `/www/wwwlogs` -- 网站日志
+- `/www/wwwroot` -- 网站根目录
+- `/www/backup` -- 宝塔自动备份文件
+
+首次安装请访问： [http://内网ip:8888/f185ef31](http://8.8.8.8:8888/f185ef31)
+
+- username: kangkang
+- password: kangkang
+
+已集成如下服务：
+
+- redis
+- mysql 5.7
+- php 7.4 8.0
+- nginx 1.2
+- 常用插件
+- npm nodejs
+
+>**来源：**
+>[绿联私有云安装宝塔教程 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488049&idx=1&sn=765db15b0d4bb68ce9f8cfc2340e8030&chksm=c25e9147f5291851d3467ccc9f237ce5324105f2126894162d46b239c77b1bd23e093b14d3b7&scene=178&cur_album_id=2893630619191214084#rd)
+
+### Alist
+
+镜像名称：`xhofe/alist:latest`
+
+网络模式：bridge，容器能力20项。
+
+
+>**来源：**
+>[绿联私有云Webdav搭配Alist，带你实现超大号家庭影院 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488201&idx=2&sn=fb47d47bf9ffe2de2633ae534fffa9ae&chksm=c25e91bff52918a9367aa331f28b31846534cac2562b644c3e84b2418c9718668262d35c58d4&scene=178&cur_album_id=2893630619191214084#rd)
+
+### 开发用的镜像
+
+镜像名称：[smiecj/docker-centos](https://github.com/smiecj/docker-centos)
 
 里面安装了一些开发语言的基本环境（如 java）。语言下载的依赖（如 maven、gopath）都统一放在 `/home/path` 目录下，安装的组件都放在 `/home/modules` 下。
 
@@ -212,13 +351,14 @@ docker pull registry.cn-hangzhou.aliyuncs.com/你自己的镜像仓库地址:myc
 docker build dockerfiles/
 docker run -e "ROOT_PWD=设定root密码" --name centos_dev -d --privileged -p 设定本地ssh端口:22 mzsmieli/centos_dev
 ```
+
 `ROOT_PWD` 可以设置 root 登录密码，也可以不设置，默认密码参考`init-system.sh`脚本中的定义
 
 `-p` 后面可以自行设置暴露的 ssh 端口，容器成功启动后，可通过该端口访问容器内部
 
 启动成功后，就可以进行自由的开发了。如果需要在容器内部编写代码，这里再推荐 `vscode + ssh + 本地免密登录配置`的开发模式。修改之后，在容器内部代码变更可以立刻生效，也可以在 vscode 中直接通过 命令行 执行操作。
 
-2. 可直接通过 ssh 连接的镜像：[jdeathe/centos-ssh](https://github.com/jdeathe/centos-ssh)
+### 可直接通过 ssh 连接的镜像：[jdeathe/centos-ssh](https://github.com/jdeathe/centos-ssh)
 
 除了启动命令的学习，这个仓库提供的`Dockefile`是直接在`centos原生镜像`基础上改的。
 

@@ -81,12 +81,15 @@
 1. 控制面板 - 程序和功能 - 打开或者关闭windows功能
 2. 勾选Telnet客户端
 
+<<<<<<< HEAD
 [设置默认优先连接ipv4网络](https://www.cnblogs.com/1314h/p/17274781.html)
 
 设置 - 网络和 Internet - 右键属性- ipv6协议- 高级- 自定义跃点数。
 
 将ipv6的跃点数改大点，就可以达到默认ipv4连接优先的效果。
 
+=======
+>>>>>>> 5d6cf2f0e08cb3e1b1e98fcff257aa676f9ebd15
 ### [如何设置定时开关机](https://baijiahao.baidu.com/s?id=1774442223573157971&wfr=spider&for=pc)
 
 1. 控制面板 - 计划任务

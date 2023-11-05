@@ -268,6 +268,7 @@ docker run -d --name ddns-go --restart=always --net=host -v /opt/ddns-go:/root j
 >**来源：**
 >[绿联NAS私有云部署DDNS-GO实现域名访问](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488261&idx=1&sn=24fa0ab5c32eb354569d45d3875aa6b3&chksm=c25e9073f52919655b09f53cdc0305f3e95acc0366fea3e95390fce3efee1bfb1d807778cbc2&scene=178&cur_album_id=2893630619191214084#rd)
 
+<<<<<<< HEAD
 ### Nginx
 
 镜像名称：`chishin/nginx-proxy-manager-zh`
@@ -300,6 +301,8 @@ Password: changeme
 >**来源：**
 >[绿联私有云NAS安装 Nginx反向代理服务器 Nginx Proxy Manager | HTTPS | 高效 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488330&idx=1&sn=a234274a23b2d32ba9d4b44d15419c00&chksm=c25e903cf529192a0be8d8cc5865fe0a5baae3e01d7c46055fb7b2f421d3c760296ff52465e4&scene=178&cur_album_id=2893630619191214084#rd)
 
+=======
+>>>>>>> 5d6cf2f0e08cb3e1b1e98fcff257aa676f9ebd15
 ### 宝塔
 
 镜像名称：`kangkang223/baota`
@@ -328,6 +331,7 @@ Password: changeme
 >**来源：**
 >[绿联私有云安装宝塔教程 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488049&idx=1&sn=765db15b0d4bb68ce9f8cfc2340e8030&chksm=c25e9147f5291851d3467ccc9f237ce5324105f2126894162d46b239c77b1bd23e093b14d3b7&scene=178&cur_album_id=2893630619191214084#rd)
 
+<<<<<<< HEAD
 ### Alist
 
 镜像名称：`xhofe/alist:latest`
@@ -338,6 +342,8 @@ Password: changeme
 >**来源：**
 >[绿联私有云Webdav搭配Alist，带你实现超大号家庭影院 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488201&idx=2&sn=fb47d47bf9ffe2de2633ae534fffa9ae&chksm=c25e91bff52918a9367aa331f28b31846534cac2562b644c3e84b2418c9718668262d35c58d4&scene=178&cur_album_id=2893630619191214084#rd)
 
+=======
+>>>>>>> 5d6cf2f0e08cb3e1b1e98fcff257aa676f9ebd15
 ### 开发用的镜像
 
 镜像名称：[smiecj/docker-centos](https://github.com/smiecj/docker-centos)

@@ -70,6 +70,17 @@
 
 ---
 
+[开启SSH](https://zhuanlan.zhihu.com/p/391373172)
+
+1. 设置 - 更新和安全 - 开发者选项 ，打开“开发人员模式”
+2. 设置 - 应用 -可选功能，确保已经装好OpenSSH服务器，默认安装OpenSSH客户端。
+3. cmd命令行中输入`ssh`。
+
+### [开启Telnet](https://blog.51cto.com/yangshaoping/3334091)
+
+1. 控制面板 - 程序和功能 - 打开或者关闭windows功能
+2. 勾选Telnet客户端
+
 ### [如何设置定时开关机](https://baijiahao.baidu.com/s?id=1774442223573157971&wfr=spider&for=pc)
 
 1. 控制面板 - 计划任务
@@ -310,6 +321,10 @@ SSID | 一般关闭光猫的无线功能，这里可不选
 <img src="https://pic2.zhimg.com/v2-f5c02bc62400c18dce9e0f3cf04356c9_r.jpg" alt="关闭ipv6防火墙" width=500> 
 
 5. 路由器上网方式`PPPoE`，填入用户名和密码。ipv6选择native。
+
+![PPPoE](https://i0.hdslb.com/bfs/article/5b60d475f70142ff10ee731e7ffa726222bdd6f1.png@1256w_1494h_!web-article-pic.webp)
+
+![native](https://i0.hdslb.com/bfs/article/a449f41a954ef508ce8aa35dbbd985a825063332.png@1256w_1304h_!web-article-pic.webp)
 
 6. [验证IPV6地址是否为公网IP。](https://www.test-ipv6.com/)
 

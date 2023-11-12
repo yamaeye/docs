@@ -26,9 +26,13 @@ ssh-keygen -t rsa -C "youremail@example.com"
 
 ---
 
-## [host](https://github.com/ButterAndButterfly/GithubHost)
+## 加速
 
-复制到host文件中：
+安装油猴脚本[Github 增强 - 高速下载](https://greasyfork.org/zh-CN/scripts/412245-github-%E5%A2%9E%E5%BC%BA-%E9%AB%98%E9%80%9F%E4%B8%8B%E8%BD%BD)。
+
+Release页面右键复制文件链接地址，粘贴到[GitHub Proxy 代理加速](https://mirror.ghproxy.com/)里下载
+
+将txt文件内容复制到[host](https://github.com/ButterAndButterfly/GithubHost)文件中：
 
 [https://github.com/ButterAndButterfly/GithubHost/releases/download/v1/host.txt](https://github.com/ButterAndButterfly/GithubHost/releases/download/v1/host.txt)
 

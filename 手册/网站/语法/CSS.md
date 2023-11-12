@@ -71,7 +71,6 @@ margin: 25px 50px;
 
 ```css
 div {
-
 padding-top: 50px;
 
 padding-right: 30px;
@@ -86,7 +85,6 @@ padding-left: 80px;
 
 ```css
 div {
-
 padding: 25px;
 }
 ```
@@ -99,7 +97,6 @@ padding: 25px;
 
 ```css
 div {
-
 position: static;
 }
 ```
@@ -239,11 +236,50 @@ z-index: -1;
 
 ```
 pre {
-
-
 white-space: pre-wrap;
-
-
 word-wrap: break-word;
 }
 ```
+
+### [white-space](https://blog.csdn.net/glorydx/article/details/112671300)
+
+用来控制文本字符串类的空白和换行
+
+| 属性     | 说明                                                                 |
+| -------- | -------------------------------------------------------------------- |
+| normal   | 忽略多余的空白，只保留一个空白（默认）                               |
+| pre      | 保留空白(行为方式类似于html中的pre标签)                              |
+| nowrap   | 只保留一个空白，文本不会换行，会在在同一行上继续，直到遇到br标签为止 |
+| pre-wrap | 保留空白符序列，正常地进行换行                                       |
+| pre-line | 合并空白符序列，保留换行符                                           |
+| inherit  | 从父元素继承white-space属性的值                                      |
+
+### word-wrap
+
+| 属性 | 说明 |
+| ---- | ---- |
+|normal|只在允许的断字点换行（浏览器保持默认处理）|
+|break-word|在长单词或 URL 地址内部进行换行|
+
+## 故障
+
+### 样式丢失
+
+@[张三钉](https://www.zhihu.com/people/zhang-san-ding)：
+
+有些模板喜欢用CDN加速css结果国内墙了海外的CDN，没办法加载结果就丢失样式了。
+
+### [用户代理样式表](https://blog.csdn.net/qq_45890970/article/details/123319868)
+
+只要一刷新页面就会向下“掉”，打开网页开发人员工具查看盒子模型，才发现多了一个叫做用户代理样式表的东西，添加一个`margin:8px`。
+
+用户代理样式表是浏览器（例如，Chrome，Firefox，Edge 等）提供的“默认样式表”，用于以满足“一般显示期望”的方式显示页面。
+
+有些同学存在用户代理样式表的问题是因为没加`<!DOCTYPE html>`，然而代码本身就有`<!DOCTYPE html>`，所以最终使用`!important`解决了这个问题！！！
+
+```
+body{
+   margin: 0 !important;
+ }
+```
+

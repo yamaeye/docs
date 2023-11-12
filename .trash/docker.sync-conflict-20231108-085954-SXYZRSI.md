@@ -267,20 +267,64 @@ docker run -d --name ddns-go --restart=always --net=host -v /opt/ddns-go:/root j
 >**来源：**
 >[绿联NAS私有云部署DDNS-GO实现域名访问](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488261&idx=1&sn=24fa0ab5c32eb354569d45d3875aa6b3&chksm=c25e9073f52919655b09f53cdc0305f3e95acc0366fea3e95390fce3efee1bfb1d807778cbc2&scene=178&cur_album_id=2893630619191214084#rd)
 
-### [青龙面板](https://hub.docker.com/r/whyour/qinglong)
+### Nginx
 
-镜像名称：`whyour/qinglong`
+镜像名称：`chishin/nginx-proxy-manager-zh`
 
-```bash
-# curl -sSL get.docker.com | sh
-docker run -dit \
-  -v $PWD/ql/data:/ql/data \
-  -p 5700:5700 \
-  --name qinglong \
-  --hostname qinglong \
-  --restart unless-stopped \
-  whyour/qinglong:latest
+默认管理员信息：
+
 ```
+Email:    admin@example.com
+Password: changeme
+```
+
+端口号+存储路径：
+
+```
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - '80:80' # Public HTTP Port
+      - '443:443' # Public HTTPS Port
+      - '81:81' # Admin Web Port
+      # Add any other Stream port you want to expose
+      # - '21:21' # FTP
+      
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
+
+```
+
+>**来源：**
+>[绿联私有云NAS安装 Nginx反向代理服务器 Nginx Proxy Manager | HTTPS | 高效](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488330&idx=1&sn=a234274a23b2d32ba9d4b44d15419c00&chksm=c25e903cf529192a0be8d8cc5865fe0a5baae3e01d7c46055fb7b2f421d3c760296ff52465e4&scene=178&cur_album_id=2893630619191214084#rd)
+
+### 宝塔
+
+镜像名称：`kangkang223/baota`
+
+网络：host 模式
+
+挂载目录：
+- `/www/wwwlogs` -- 网站日志
+- `/www/wwwroot` -- 网站根目录
+- `/www/backup` -- 宝塔自动备份文件
+
+首次安装请访问： [http://内网ip:8888/f185ef31](http://8.8.8.8:8888/f185ef31)
+
+- username: kangkang
+- password: kangkang
+
+已集成如下服务：
+
+- redis
+- mysql 5.7
+- php 7.4 8.0
+- nginx 1.2
+- 常用插件
+- npm nodejs
+
+>**来源：**
+>[绿联私有云安装宝塔教程](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488049&idx=1&sn=765db15b0d4bb68ce9f8cfc2340e8030&chksm=c25e9147f5291851d3467ccc9f237ce5324105f2126894162d46b239c77b1bd23e093b14d3b7&scene=178&cur_album_id=2893630619191214084#rd)
 
 ### Alist
 
@@ -297,15 +341,20 @@ docker run -d --restart=always -v /etc/alist:/opt/alist/data -p 5244:5244 -e PUI
 >**来源：**
 >[绿联私有云Webdav搭配Alist，带你实现超大号家庭影院 (qq.com)](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488201&idx=2&sn=fb47d47bf9ffe2de2633ae534fffa9ae&chksm=c25e91bff52918a9367aa331f28b31846534cac2562b644c3e84b2418c9718668262d35c58d4&scene=178&cur_album_id=2893630619191214084#rd)
 
-### [Onenav](https://doc.xiaoz.org/books/onenav/page/a1d0c)
+### [青龙面板](https://hub.docker.com/r/whyour/qinglong)
+
+镜像名称：`whyour/qinglong`
 
 ```bash
-docker run -itd --name="onenav" -p 80:80 \
-    -v /data/onenav:/data/wwwroot/default/data \
-    helloz/onenav:0.9.30
+# curl -sSL get.docker.com | sh
+docker run -dit \
+  -v $PWD/ql/data:/ql/data \
+  -p 5700:5700 \
+  --name qinglong \
+  --hostname qinglong \
+  --restart unless-stopped \
+  whyour/qinglong:latest
 ```
-
-在挂载目录下创建`templates`目录，然后将[主题](https://soft.xiaoz.org/#/public/onenav/themes)解压至此目录，系统设置 - 主题设置 - 选择要使用的主题
 
 ### [Docsify](https://hub.docker.com/r/alertbox/docsify-served)
 
@@ -321,203 +370,6 @@ docker run -dp 3083:3000 -v `pwd`/docs:/var/www alertbox/docsify-served:4.4.1
 
 ```bash
 docker run -it --name my_hexo_container -p 4000:4000 -v hexo_data:/home/hexo/.hexo taskbjorn/hexo
-```
-
-### [Dokuwiki](https://hub.docker.com/r/linuxserver/dokuwiki)
-
-镜像名称：`bitnami/dokuwiki`
-
-```bash
-docker run -d \
-  --name=dokuwiki \
-  -e PUID=1000 \
-  -e PGID=1000 \
-  -e TZ=Asia/Shanghai \
-  -p 80:80 \
-  -p 443:443 `#optional` \
-  -v /path/to/appdata/config:/config \
-  -v /pages:/config/dokuwiki/data/pages \
-  -v /media:/config/dokuwiki/data/media \
-  --restart unless-stopped \
-  lscr.io/linuxserver/dokuwiki:latest
-```
-
-安装后访问`IP:端口号/install.php`
-
-### [hugo](https://hub.docker.com/r/corpusops/hugo)
-
-镜像名称：`corpusops/hugo`
-
-```
-docker run -it --rm \
-	-e HUGO_UID=$(id -u) -e HUGO_GID=$(id -g)  \
-	-v $PWD:/home/hugo/hugo corpusops/hugo hugo_extended
-```
-
-### [Nginx](https://github.com/xiaoxinpro/nginx-proxy-manager-zh)
-
-镜像名称：`chishin/nginx-proxy-manager-zh`
-
-默认管理员信息：
-
-```
-Email:    admin@example.com
-Password: changeme
-```
-
-端口号+存储路径：
-
-```
-    ports:
-      # These ports are in format <host-port>:<container-port>
-      - '11180:80' # Public HTTP Port
-      - '11443:443' # Public HTTPS Port
-      - '11181:81' # Admin Web Port
-      # Add any other Stream port you want to expose
-      # - '11121:21' # FTP
-      
-    volumes:
-      - ./data:/data
-      - ./letsencrypt:/etc/letsencrypt
-      - ./html:/var/www/html
-```
-
->**来源：**
->[绿联私有云NAS安装 Nginx反向代理服务器 Nginx Proxy Manager | HTTPS | 高效](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488330&idx=1&sn=a234274a23b2d32ba9d4b44d15419c00&chksm=c25e903cf529192a0be8d8cc5865fe0a5baae3e01d7c46055fb7b2f421d3c760296ff52465e4&scene=178&cur_album_id=2893630619191214084#rd)
-
-### [Wiki.js](https://zhuanlan.zhihu.com/p/567969932)
-
-镜像名称：`linuxserver/wikijs`
-
-```bash
-docker run -d \
-  --name=wikijs \
-  -e PUID=1000 \
-  -e PGID=1000 \
-  -e TZ=CN \
-  -e DB_TYPE= postgres `#optional` \
-  -e DB_HOST= db `#optional` \
-  -e DB_PORT= 5432 `#optional` \
-  -e DB_NAME= wikijs `#optional` \
-  -e DB_USER= `#optional` \
-  -e DB_PASS= `#optional` \
-  -p 3000:3000 \
-  -v /path/to/config:/config \
-  -v /path/to/data:/data \
-  --restart unless-stopped \
-  lscr.io/linuxserver/wikijs:latest
-```
-
-- Local - Download中文语言包 - APPLY
-- 配置文件 - 时区 - China Time
-
-### [PostgreSQL](https://hub.docker.com/r/abcfy2/zhparser)
-
-镜像名称：`abcfy2/zhparser`
-
-```bash
-version: "3"
-services:
-
-  db:
-    image: lesca/postgres-jieba
-    container_name: wiki_db
-    environment:
-      POSTGRES_DB: wiki
-      POSTGRES_PASSWORD: "xxx"
-      POSTGRES_USER: xxx
-    logging:
-      driver: "none"
-    restart: unless-stopped
-    volumes:
-      - ./dbdata/:/var/lib/postgresql/data
-
-  wiki:
-    image: requarks/wiki:2
-    container_name: wiki
-    depends_on:
-      - db
-    environment:
-      DB_TYPE: postgres
-      DB_HOST: db
-      DB_PORT: 5432
-      DB_USER: xxx
-      DB_PASS: "xxx"
-      DB_NAME: wiki
-    restart: unless-stopped
-    ports:
-      - "3000:3000"
-      - "3443:3443"
-
-  # pgadmin - postgresql database explorer
-  # use only if you want to edit the database 
-  pgadmin:
-    image: dpage/pgadmin4
-    container_name: wiki_pgadmin
-    depends_on:
-      - db
-    environment:
-      PGADMIN_DEFAULT_EMAIL: xxx@xxx.com
-      PGADMIN_DEFAULT_PASSWORD: xxx
-    restart: unless-stopped
-    ports:
-      - "14080:80"
-```
-
-进入 wiki 后台 – 搜索引擎 – 选择“Database – PostgreSQL” – 选择 simple，应用
-
-### [pgadmin4](https://zhuanlan.zhihu.com/p/576303625?utm_id=0)
-
-镜像名称：`dpage/pgadmin4`
-
-```bash
-docker run -d -p 5433:80 –name pgadmin4 -e PGADMIN_DEFAULT_EMAIL=test@123.com -e PGADMIN_DEFAULT_PASSWORD=123456 dpage/pgadmin4
-```
-
-@[esca.cn](https://www.lesca.cn/archives/wiki-js-chinese-search-jieba.html)：
-
-1. create server - 输入postgresql数据库的用户名和密码。
-2. 连接数据库，找到表`searchEngines`，将属性 `postgres` 的值 `{"dictLanguage":"simple"}` 改为 `{"dictLanguage":"jiebacfg"}`
-3. 进入 wiki 后台 – 搜索引擎。这时选项为空，不用管它。点击“重建索引”
-4. `pgadmin` 仅临时用于修改数据库，用完后记得将其关闭（注释掉即可）。
-
-### [宝塔](https://hub.docker.com/r/kangkang223/baota)
-
-镜像名称：`kangkang223/baota`
-
-网络：host 模式
-
-挂载目录：
-- `/www/wwwlogs` -- 网站日志
-- `/www/wwwroot` -- 网站根目录
-- `/www/backup` -- 宝塔自动备份文件
-
-首次安装请访问： [http://内网ip:8888/f185ef31](http://8.8.8.8:8888/f185ef31)
-
-- username: kangkang
-- password: kangkang
-
-新建网站，设置站点SSL，反向代理`目标URL`加端口号，安全 - 添加端口规则 - 端口 - 提交
-
-已集成如下服务：
-
-- redis
-- mysql 5.7
-- php 7.4 8.0
-- nginx 1.2
-- 常用插件
-- npm nodejs
-
->**来源：**
->[绿联私有云安装宝塔教程](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488049&idx=1&sn=765db15b0d4bb68ce9f8cfc2340e8030&chksm=c25e9147f5291851d3467ccc9f237ce5324105f2126894162d46b239c77b1bd23e093b14d3b7&scene=178&cur_album_id=2893630619191214084#rd)
-
-### [Watchtower](https://hub.docker.com/r/containrrr/watchtower)
-
-```bash
-$ docker run -d \
-    --name watchtower \
-    -v /var/run/docker.sock:/var/run/docker.sock \
-    containrrr/watchtower
 ```
 
 ### 开发用的镜像

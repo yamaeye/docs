@@ -46,7 +46,6 @@ defaultMarkdownHandler = "goldmark"
 
 [markup.goldmark]
 
-
 [markup.goldmark.renderer]unsafe = true
 ```
 
@@ -59,4 +58,13 @@ Netlify平台上Hugo不支持`git clone`方法安装主题样式. 如果使用�
 ```
 cd themes
 git submodule add https://github.com/<THEMECREATOR>/<THEMENAME>
+```
+
+## [主题失效](https://blog.51cto.com/u_16213607/7482664)
+
+打包后会使用baseUrl配置的地址，修改`config.toml`的`baseURL`配置
+
+```
+文件路径 ：blog/config/_default/config.toml
+改为 ：baseUrl = "/"
 ```

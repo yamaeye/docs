@@ -49,10 +49,10 @@ Release页面右键复制文件链接地址，粘贴到[GitHub Proxy 代理加�
 
 4. 把想加速的文件地址改成jsdelivr版本：
 
-
 ```
 https://cdn.jsdelivr.net/gh/用户名/仓库名@版本号/文件地址
 ```
+
 比如：
 
 ```

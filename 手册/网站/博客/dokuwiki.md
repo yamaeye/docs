@@ -21,8 +21,16 @@ $meta['fnencode' ] = array('string');
 
 ### [文内插入链接](https://www.dokuwiki.org/zh:wiki:syntax)
 
+外部链接：
+
 ```
  [[http://www.地址.com|名称]]
+```
+
+内部链接：
+
+```
+ [[目录:页面名#章节名|名称]] 
 ```
 
 ## [主题](http://ciangbrides.myds.me/dw/dokuwiki/template)

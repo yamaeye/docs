@@ -2,7 +2,7 @@
 
 ### 棋
 
-#### [Alekhine的盲棋比赛](https://yamaeye.pages.dev/newspaper/public/2022-12-02/专业/竞赛/国际象棋大师alekhine的盲棋比赛/) | [棋手Polgár三姐妹](引用/人物/艺术/棋手Polgár三姐妹.md)
+#### [棋手Polgár三姐妹](引用/人物/艺术/棋手Polgár三姐妹.md)
 
 ### 音乐
 

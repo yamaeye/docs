@@ -17,9 +17,9 @@
   - [🍰 生活](/生活/)
 
 - ⛩️ 传送门
-  - [✒️ 摘录](https://yamaeye.pages.dev/newspaper/public/)
-  - [📰 讯息](https://yamaeye.pages.dev/city/public/)
+  - [✒️ 摘录](http://times.sophie-eden.ltd/)
+  - [📰 讯息](http://city.sophie-eden.ltd/)
   - [🎬 图库](https://sophie-eden.pages.dev/)
-  - [🎪 杂货](https://goodlucky.pages.dev/)
+  - [🎪 杂货](https://yamaeye.github.io/goods/public/)
   
 - [🏰 首页](/)

@@ -48,7 +48,6 @@
 <tr valign="top">
     <td width="25%">
     <p>
-    <a href="https://yamaeye.pages.dev/newspaper/public/2022-10-13/专业/航空/王牌飞行员学校/">王牌飞行员学校</a><br/>
     </p>
     </td>
     <td width="25%">

@@ -354,6 +354,31 @@ docker run -it --rm \
 	-v $PWD:/home/hugo/hugo corpusops/hugo hugo_extended
 ```
 
+### [Tailscale](https://baijiahao.baidu.com/s?id=1755095141291248356&wfr=spider&for=pc)
+
+1. 进入[Tailscale官网](https://tailscale.com/)注册账号
+2. 登录后可以按需下载对应的客户端
+3. [Windows版](https://tailscale.com/download/windows)安装完成后会打开一个新网页并提示登录
+4. 在[配置页面](https://login.tailscale.com/admin/settings/keys)中点击Keys，生成`Auth keys`，`Reusable`一定要勾选上`多设备支持`选项。
+5. 复制并保存开头为`tskey-auth-`的有效秘钥
+6. 进入[管理页面](https://login.tailscale.com/admin/machines)，能看到分配好的虚拟ip
+
+[镜像名称](https://hub.docker.com/r/tailscale/tailscale)：`tailscale/tailscale`
+
+环境配置里添加选项`TS_AUTH_KEY`，值填写官网复制的秘钥
+
+```
+docker run -d
+--name=tailscaled
+-v /var/lib:/var/lib
+-v /dev/net/tun:/dev/net/tun
+--network=host
+--cap-add=NET_ADMIN
+--cap-add=NET_RAW
+--env TS_AUTH_KEY=xxxxx
+tailscale/tailscale
+```
+
 ### [Nginx](https://github.com/xiaoxinpro/nginx-proxy-manager-zh)
 
 镜像名称：`chishin/nginx-proxy-manager-zh`

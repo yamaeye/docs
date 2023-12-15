@@ -25,6 +25,18 @@ ssh-keygen -t rsa -C "youremail@example.com"
 查看并复制C盘用户主目录里 `~/.ssh/id_rsa.pub` 文件内容，粘贴到个人设置的SSH Keys。
 
 ---
+## [gitignore](https://blog.csdn.net/Dontla/article/details/131936999)
+
+想要忽略`dir1`目录下的`.txt`文件，但不想忽略`dir2`目录下的`.txt`文件，可以按照以下步骤进行配置：
+
+```py
+    # 忽略dir1目录下的.txt文件
+    /dir1/*.txt
+    # 不忽略dir2目录下的.txt文件
+    !/dir2/*.txt
+```
+
+---
 
 ## 加速
 
@@ -39,7 +51,6 @@ Release页面右键复制文件链接地址，粘贴到[GitHub Proxy 代理加�
 [https://hub.fastgit.xyz/ButterAndButterfly/GithubHost/releases/download/v1/host.txt](https://hub.fastgit.xyz/ButterAndButterfly/GithubHost/releases/download/v1/host.txt)
 
 ## [jsdelivr加速CDN](https://www.cnblogs.com/yu-du-chen/p/12109065.html)
-
 
 1. 首先需要创建 releases
 

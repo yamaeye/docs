@@ -113,7 +113,7 @@ net start LxssManager
 
 一般在`docker`的安装目录下，可以用`everything`搜索一下，将镜像源配置进去。
 
-![RegistryMirror](https://mpt.135editor.com/mmbiz_png/sCibEfmAGicvhC5iaNUeDdjCjibpeAmV49KBw7Cktpxib2DKhtvlZu5pMjENXyul3IaTc7vLuNwBk3x8pDQX52pz98g/640?wx_fmt=png)
+![RegistryMirror](https://yamaeye.github.io/docs/img/pc/RegistryMirror.jpg)
 
 3. 配置代理
 

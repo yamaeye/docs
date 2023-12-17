@@ -60,7 +60,16 @@
                 noData: '未找到',
                 depth: 10,
                 hideOtherSidebarContent: false // 是否隐藏其他侧边栏内容
-            }
+            },
+
+            beian: {
+                    ICP: "辽ICP备2023012496号-1",
+                    NISMSP: {
+                    number: "",  //	公安部备案号
+                    url: "",  //	公安部备案链接	http://www.beian.gov.cn/portal/registerSystemInfo?recordcode= 加上你的备案号的数字部分
+                    id: ""  //公安部备案号的数字部分
+        }
+    },
 
         }
     </script>
@@ -87,6 +96,10 @@
 
     <!-- 复制代码按钮 -->
     <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
+
+    <!-- 备案插件 -->
+    <script src="https://cdn.jsdelivr.net/npm/docsify-beian@latest/dist/beian.min.js"></script>
+
 
     <!-- Gitalk 评论系统 
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">

@@ -18,7 +18,7 @@
 
 - ⛩️ 传送门
   - [✒️ 摘录](http://times.sophie-eden.ltd/)
-  - [📰 讯息](http://city.sophie-eden.ltd/)
+  - [📰 讯息](https://yamaeye.pages.dev/city/public)
   - [🎬 图库](https://sophie-eden.pages.dev/)
   - [🎪 杂货](https://yamaeye.github.io/goods/public/)
   

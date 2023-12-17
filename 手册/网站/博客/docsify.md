@@ -22,6 +22,32 @@ docsify init ./docs
 docsify s
 ```
 
+## 插件
+
+### [备案插件](https://github.com/HerbertHe/docsify-beian)
+
+`index.html`添加依赖 Add script
+
+```html
+<!-- 备案插件 -->
+<script src="https://cdn.jsdelivr.net/npm/docsify-beian@latest/dist/beian.min.js"></script>
+```
+
+添加配置 Add settings
+
+```js
+window.$docsify = {
+  beian: {
+        ICP: "", //工信部ICP备案号
+        NISMSP: {
+            number: "", //	公安部备案号
+            url: "", //	公安部备案链接	http://www.beian.gov.cn/portal/registerSystemInfo?recordcode= 加上你的备案号的数字部分
+            id: "" //公安部备案号的数字部分，优先级比url更高
+        },
+    },
+}
+```
+
 ## 问题
 
 ### [一直Loading](https://zhuanlan.zhihu.com/p/663807103)

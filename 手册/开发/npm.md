@@ -19,3 +19,15 @@ npm config set proxy null
 ```
 npm config set registry https://registry.npmmirror.com/
 ```
+
+### [如何更新npm](https://blog.csdn.net/weixin_44222492/article/details/99637027)
+
+```shell
+npm install npm@latest -g
+```
+
+###### 更新全局包
+
+```shell
+npm update -g
+```

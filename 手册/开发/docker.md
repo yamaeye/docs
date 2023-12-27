@@ -362,6 +362,8 @@ docker run -it --rm \
 4. 在[配置页面](https://login.tailscale.com/admin/settings/keys)中点击Keys，生成`Auth keys`，`Reusable`一定要勾选上`多设备支持`选项。
 5. 复制并保存开头为`tskey-auth-`的有效秘钥
 6. 进入[管理页面](https://login.tailscale.com/admin/machines)，能看到分配好的虚拟ip
+7. 禁用密钥过期限制，否则账号到期后就无法连接
+8. 作为代理节点访问其他服务需要打开subnets
 
 [镜像名称](https://hub.docker.com/r/tailscale/tailscale)：`tailscale/tailscale`
 
@@ -410,6 +412,41 @@ Password: changeme
 >**来源：**
 >[绿联私有云NAS安装 Nginx反向代理服务器 Nginx Proxy Manager | HTTPS | 高效](https://mp.weixin.qq.com/s?__biz=MzkzMjE3MzMzNw==&mid=2247488330&idx=1&sn=a234274a23b2d32ba9d4b44d15419c00&chksm=c25e903cf529192a0be8d8cc5865fe0a5baae3e01d7c46055fb7b2f421d3c760296ff52465e4&scene=178&cur_album_id=2893630619191214084#rd)
 
+### [WordPress](https://mp.weixin.qq.com/s/5WMi_KYbYonOpT2Sfhsz-g)
+
+MYSQL_ROOT_PASSWORD：自定义密码
+
+1. [Navicat for MySQL](https://www.bilibili.com/read/cv17235251/)连接数据库
+
+![连接数据库](https://yamaeye.github.io/docs/img/pc/navcat-wordpress.png)
+
+2. 右键点击连接名 - 新建数据库 - 名称填wordpress - 确定 - 关闭navicat
+3. 浏览器进入wordpress后台配置数据库，运行安装程序
+
+### [webstack](https://hub.docker.com/r/codecly/webstack-guns-nkt-docker)
+
+镜像名称：`codecly/webstack-guns-nkt-docker`
+
+```
+docker run -itd \
+    -e DB_DATABASE=webstack \
+    -e DB_HOST=192.168.211.28 \
+    -v /path/to/config:/root/webstack/config \
+    -v /path/to/file:/root/webstack/file \
+    --name webstack \
+    -p 8000:8000 \
+    codecly/webstack-guns-nkt-docker
+```
+
+|环境变量名称|环境变量说明|默认值|
+|---|---|---|
+|IMAGE_UPLOAD_PATH|图片上传路径(容器中)|/root/webstack/file|
+|DB_HOST|数据库主机|127.0.0.1|
+|DB_PORT|数据库端口|3306|
+|DB_DATABASE|数据库名称|webstack|
+|DB_USERNAME|数据库用户名|root|
+|DB_PASSWORD|数据库密码|root|
+
 ### [Wiki.js](https://zhuanlan.zhihu.com/p/567969932)
 
 镜像名称：`linuxserver/wikijs`
@@ -436,7 +473,28 @@ docker run -d \
 - Local - Download中文语言包 - APPLY
 - 配置文件 - 时区 - China Time
 
-### [PostgreSQL](https://hub.docker.com/r/abcfy2/zhparser)
+### [PostgreSQL](https://post.smzdm.com/p/a60xn2oo/)
+
+```
+docker run -d
+--name postgresql
+-p 5433:5432
+-v /volume1/docker/postgresql/data:/var/lib/postgresql/data
+-e POSTGRES_DB=dataname
+-e POSTGRES_PASSWORD=password
+-e POSTGRES_USER=username
+--restart unless-stopped
+postgres:latest
+```
+### [pgadmin4](https://zhuanlan.zhihu.com/p/576303625?utm_id=0)
+
+镜像名称：`dpage/pgadmin4`
+
+```bash
+docker run -d -p 5433:80 –name pgadmin4 -e PGADMIN_DEFAULT_EMAIL=test@123.com -e PGADMIN_DEFAULT_PASSWORD=123456 dpage/pgadmin4
+```
+
+### [中文分词数据库](https://hub.docker.com/r/abcfy2/zhparser)
 
 镜像名称：`abcfy2/zhparser`
 
@@ -490,14 +548,6 @@ services:
 ```
 
 进入 wiki 后台 – 搜索引擎 – 选择“Database – PostgreSQL” – 选择 simple，应用
-
-### [pgadmin4](https://zhuanlan.zhihu.com/p/576303625?utm_id=0)
-
-镜像名称：`dpage/pgadmin4`
-
-```bash
-docker run -d -p 5433:80 –name pgadmin4 -e PGADMIN_DEFAULT_EMAIL=test@123.com -e PGADMIN_DEFAULT_PASSWORD=123456 dpage/pgadmin4
-```
 
 @[esca.cn](https://www.lesca.cn/archives/wiki-js-chinese-search-jieba.html)：
 

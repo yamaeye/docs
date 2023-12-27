@@ -9,6 +9,7 @@
                 * [添加搜索功能](/手册/网站/博客/hugo添加搜索功能.md)
             * [Docsify](/手册/网站/博客/docsify.md)
             * [dokuwiki](/手册/网站/博客/dokuwiki.md)
+            * [wordpress](/手册/网站/博客/wordpress.md)
         * [字体](/手册/网站/字体.md)
     * [开发](/手册/开发/)
     * [PC](/手册/PC/)

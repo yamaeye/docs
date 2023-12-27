@@ -83,8 +83,21 @@ fatal: Could not read from remote repository. Please make sure you have the corr
 
 廖老师是通过 `git@github.com:michaelliao/learngit.git` 关联的，在win7和win10上测试推送时都不能成功，`https`的才可以。
 
-
 如果已经用git@关联，则可以在`.git`目录下的`config文`件中，把 `url =` 后面的内容改为`https`类型的即可。
+
+### [HTTP/2报错](https://blog.csdn.net/u011426236/article/details/129104875)
+
+使用Git push github仓库时一直报错
+
+```
+ HTTP/2 stream 1 was not closed cleanly before end of the underlying stream
+```
+
+通过排查发现，是 git 默认使用的通信协议出现了问题，可以通过将默认通信协议修改为 http/1.1 来解决该问题。
+
+```
+git config --global http.version HTTP/1.1
+```
 
 ### [撤销上次推送并改正](https://blog.csdn.net/CCC_122/article/details/105890703)
 

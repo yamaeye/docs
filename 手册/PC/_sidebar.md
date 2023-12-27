@@ -8,6 +8,7 @@
         * [win系统](/手册/PC/win系统.md)
         * [cmd](/手册/PC/cmd.md)
         * [浏览器](/手册/PC/浏览器.md)
+        * [cookie+token](/手册/PC/cookie+token.md)
         * [Manjaro系统](/手册/PC/Manjaro系统.md)
         * [软件](/手册/PC/软件/)
     * [占星](/手册/占星/)

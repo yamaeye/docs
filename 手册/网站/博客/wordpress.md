@@ -45,3 +45,21 @@ php_value memory_limit 512M
 ### [WPvivid](https://www.wpdaxue.com/wpvivid-backup.html)
 
 可以自动或手动备份网站文件和数据库，只需单击一下，即可将WordPress网站移至新域名。
+
+### [Litespeed cache](https://zhuanlan.zhihu.com/p/647126005)
+
+常规 - 生成域密钥 - 等待几分钟后刷新 - Link to QUIC.cloud - 注册QUIC.cloud账号
+
+@[LittleModesty](https://www.zhihu.com/question/361191216/answer/989181663)：
+
+LSCache(LightSpeed Cache)需要服务器层面的软件支持。WP Rocket需要付费使用，W3 Total Cache虽然免费但设置繁琐，WP Super Cache性能不好但设置最为简单......
+
+![性能对比](https://pic1.zhimg.com/v2-dd12c2342fd8190cfaeb1e5eeb3d32d5_r.jpg?source=1def8aca)
+
+### [WP Super Cache](https://zhuanlan.zhihu.com/p/603725081)
+
+为了取代繁琐的WordPress PHP代码，它通过产生静态HTML文件并提供这些文件以加快加载时间来有效地运作。WP Super Cache的简单设置是一个主要优势，您可以简单地启用缓存功能，让插件完成剩下的工作，或者您可以利用更多的高级功能。
+
+### [Wp Fastest Cache](https://zhuanlan.zhihu.com/p/612620500)
+
+如果许多访问者来到该网站，那么系统会使用大量的RAM和CPU，因此页面需要时间来加载。W3缓存插件会生成一个静态缓存文件，因此您的服务器不会一次又一次地使用RAM和CPU。

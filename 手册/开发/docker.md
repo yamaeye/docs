@@ -197,10 +197,6 @@ docker push registry.cn-hangzhou.aliyuncs.com/你自己的镜像仓库地址:myc
 docker pull registry.cn-hangzhou.aliyuncs.com/你自己的镜像仓库地址:mycentos_V3_SSH
 ```
 
-### 
-
-
-
 
 ## 配置容器参数
 
@@ -354,6 +350,67 @@ docker run -it --rm \
 	-v $PWD:/home/hugo/hugo corpusops/hugo hugo_extended
 ```
 
+### [简单图床](https://post.smzdm.com/p/akk76n7k/)
+
+```bash
+docker run
+--name easyimage
+-p 8580:80
+-e TZ=Asia/Shanghai
+-e PUID=1000
+-e PGID=1000
+-e DEBUG=false
+-v /volume1/docker/easyimage/config:/app/web/config
+-v /volume1/docker/easyimage/i:/app/web/i
+ddsderek/easyimage:latest
+```
+
+### [兰空图床](https://blog.uptoz.cn/archives/ywtUIkE7)
+
+镜像名称：`halcyonazure/lsky-pro-docker`
+
+```yaml
+version: '3'
+services:
+  lskypro:
+    image: halcyonazure/lsky-pro-docker:latest
+    restart: unless-stopped
+    hostname: lskypro
+    container_name: lskypro
+    environment:
+      - WEB_PORT=8089
+    volumes:
+      - $PWD/web:/var/www/html/
+      - $PWD/uploads:/var/www/html/storage/app/uploads
+    ports:
+      - "9080:8089"
+    networks:
+      - lsky-net
+
+  # 注：arm64的无法使用该镜像，请选择sqlite或自建数据库
+  mysql-lsky:
+    image: mysql:5.7.22
+    restart: unless-stopped
+    # 主机名，可作为"数据库连接地址"
+    hostname: mysql-lsky
+    # 容器名称
+    container_name: mysql-lsky
+    # 修改加密规则
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - $PWD/mysql/data:/var/lib/mysql
+      - $PWD/mysql/conf:/etc/mysql
+      - $PWD/mysql/log:/var/log/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: lAsWjb6rzSzENUYg # 数据库root用户密码，自行修改
+      MYSQL_DATABASE: lsky-data # 可作为"数据库名称/路径"
+    networks:
+      - lsky-net
+
+networks:
+  lsky-net: {}
+```
+
 ### [Tailscale](https://baijiahao.baidu.com/s?id=1755095141291248356&wfr=spider&for=pc)
 
 1. 进入[Tailscale官网](https://tailscale.com/)注册账号
@@ -486,6 +543,7 @@ docker run -d
 --restart unless-stopped
 postgres:latest
 ```
+
 ### [pgadmin4](https://zhuanlan.zhihu.com/p/576303625?utm_id=0)
 
 镜像名称：`dpage/pgadmin4`

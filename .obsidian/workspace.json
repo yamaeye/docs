@@ -1,0 +1,242 @@
+{
+  "main": {
+    "id": "4b4005f2b5d81ad5",
+    "type": "split",
+    "children": [
+      {
+        "id": "f2ff110712045020",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f065c57e160b8a1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "读书/学习/README.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e029c42132c24958",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "读书/学习/超级学习者.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5fc4d4ecb4f3d9d6",
+    "type": "split",
+    "children": [
+      {
+        "id": "7621a05975823670",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "13c4baadeed354b8",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "8bc2d14184173453",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "www.sophie-eden",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "73096f784aa0bd7d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          },
+          {
+            "id": "25d01858946e9643",
+            "type": "leaf",
+            "state": {
+              "type": "recent-files",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "horizontal",
+    "width": 320.5
+  },
+  "right": {
+    "id": "eeba47c2f23f4564",
+    "type": "split",
+    "children": [
+      {
+        "id": "6ae50bbc11e2b24a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cde0c8776d215aa4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "读书/学习/超级学习者.md"
+              }
+            }
+          },
+          {
+            "id": "62b4af5029c2ef1f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "读书/学习/超级学习者.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "6d30de633582cd03",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "读书/学习/超级学习者.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "069f8e5e69607290",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {}
+            }
+          },
+          {
+            "id": "175bbf608fb6a139",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "114761006d549ba2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 244.5
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "command-palette:打开命令面板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "remotely-save:Remotely Save": false,
+      "obsidian-spaced-repetition:复习卡片": false
+    }
+  },
+  "active": "8bc2d14184173453",
+  "lastOpenFiles": [
+    "_navbar.md",
+    "手册/网站/博客/wordpress.md",
+    "手册/开发/docker.md",
+    "读书/学习/认知天性.md",
+    "读书/学习/README.md",
+    "引用/资料/学习/属性/心理表征.md",
+    "引用/资料/艺术/绘画.md",
+    "引用/资料/书单/列表.md",
+    "引用/资料/书单/经济学.md",
+    "引用/资料/书单/法律.md",
+    "引用/资料/历史/1846年美墨战争.md",
+    "引用/资料/教育/培养杰出人物.md",
+    "引用/资料/教育/方法.md",
+    "引用/资料/学习/创造.md",
+    "引用/资料/学习/属性/天赋.md",
+    "引用/资料/学习/属性/学习风格.md",
+    "引用/资料/学习/属性/_sidebar.md",
+    "引用/资料/学习/属性/智力.md",
+    "读书/学习/超级学习者.md",
+    "读书/学习/刻意练习.md",
+    "教程/神秘/Tulpa.md",
+    "手册/网站/博客/_sidebar.md",
+    "手册/网站/_sidebar.md",
+    "引用/案例/心理/学习/记忆.md",
+    "引用/案例/心理/学习/README.md",
+    "引用/案例/README.md",
+    "教程/神秘",
+    "img/books/文心.jpg.crdownload",
+    "img/books/文心.jpg",
+    "读书/写作",
+    "img/pc/navcat-wordpress.png",
+    "img/pc/navcat-wordpress.png.crdownload",
+    "img/pc/RegistryMirror.jpg",
+    "img/books/学术“咸鱼”自救指南.jpg",
+    "Pasted image 20231201100611.png",
+    "Pasted image 20231201100610.png",
+    "引用/资料/学习/属性/~syncthing~记忆.sync-conflict-20231128-161138-KTXPNMX.md.tmp",
+    "引用/案例/心理/学习/~syncthing~专家和新手.sync-conflict-20231128-161138-KTXPNMX.md.tmp",
+    "手册/开发/~syncthing~docker.sync-conflict-20231110-095303-KTXPNMX.md.tmp",
+    "手册/PC/软件/~syncthing~未命名.md.tmp",
+    "手册/开发/~syncthing~docker.sync-conflict-20231109-095815-KTXPNMX.md.tmp",
+    "404.html",
+    "img/favicon-32x32.png",
+    "img/apple-touch-icon.png",
+    "img/android-chrome-512x512.png",
+    "img/android-chrome-192x192.png"
+  ]
+}

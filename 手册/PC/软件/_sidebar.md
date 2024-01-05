@@ -10,6 +10,7 @@
 	        * [Excel](/手册/PC/软件/Excel.md)
 	        * [Word](/手册/PC/软件/Word.md)
 	        * [Obsidian](/手册/PC/软件/Obsidian.md)
+	        * [Navicat](/手册/PC/软件/Navicat.md)
 	        * [Sumatra PDF](/手册/PC/软件/Sumatra-PDF.md)
 	        * [EmEditor](/手册/PC/软件/EmEditor.md)
 	        * [下载](/手册/PC/软件/下载.md)

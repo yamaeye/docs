@@ -8,24 +8,60 @@
         "type": "tabs",
         "children": [
           {
-            "id": "f065c57e160b8a1b",
+            "id": "72304e1ffa56c644",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "读书/学习/README.md",
+                "file": "教程/专业/图书情报学.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "e029c42132c24958",
+            "id": "24f8355407e9d668",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "读书/学习/超级学习者.md",
+                "file": "手册/开发/Github.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "38d13368423517b5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "教程/考试/语文/小学一年级.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "db2e5d7b4ed8af3e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "读书/神秘/秘密.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "799285a57a2acfaf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "读书/写作/文心.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +97,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "www.sophie-eden",
+                "query": "conflict",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,12 +122,12 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 320.5
+    "width": 255.5,
+    "collapsed": true
   },
   "right": {
     "id": "eeba47c2f23f4564",
@@ -107,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "读书/学习/超级学习者.md"
+                "file": "手册/开发/Github.md"
               }
             }
           },
@@ -117,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "读书/学习/超级学习者.md",
+                "file": "手册/开发/Github.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "读书/学习/超级学习者.md",
+                "file": "手册/开发/Github.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -190,34 +226,39 @@
       "obsidian-spaced-repetition:复习卡片": false
     }
   },
-  "active": "8bc2d14184173453",
+  "active": "24f8355407e9d668",
   "lastOpenFiles": [
-    "_navbar.md",
-    "手册/网站/博客/wordpress.md",
-    "手册/开发/docker.md",
-    "读书/学习/认知天性.md",
-    "读书/学习/README.md",
+    "教程/艺术/漫画.md",
+    "教程/专业/图书情报学.md",
+    "教程/艺术",
+    "手册/PC/软件/Navicat.md",
+    "手册/PC/软件/README.md",
+    "读书/神秘/秘密.md",
+    "读书/神秘/秘密-总结.md",
+    "教程/考试/数学/书单.md",
+    "教程/考试/语文/小学一年级.md",
+    "教程/考试/数学",
+    "手册/PC/软件/_sidebar.md",
+    "手册/PC/_sidebar.md",
+    "引用/资料/心理/直觉与错觉.sync-conflict-20240102-141350-SXYZRSI.md",
+    "读书/心理/社会心理学.sync-conflict-20240102-141414-SXYZRSI.md",
+    "教程/考试/_sidebar.md",
+    "教程/神秘/_sidebar.md",
+    "教程/文化/_sidebar.md",
+    "教程/语言/_sidebar.md",
+    "教程/_sidebar.md",
+    "教程/README.md",
+    "教程/专业/_sidebar.md",
+    "教程/专业/README.md",
+    "教程/语言/README.md",
     "引用/资料/学习/属性/心理表征.md",
-    "引用/资料/艺术/绘画.md",
-    "引用/资料/书单/列表.md",
-    "引用/资料/书单/经济学.md",
-    "引用/资料/书单/法律.md",
-    "引用/资料/历史/1846年美墨战争.md",
-    "引用/资料/教育/培养杰出人物.md",
-    "引用/资料/教育/方法.md",
-    "引用/资料/学习/创造.md",
-    "引用/资料/学习/属性/天赋.md",
-    "引用/资料/学习/属性/学习风格.md",
-    "引用/资料/学习/属性/_sidebar.md",
-    "引用/资料/学习/属性/智力.md",
-    "读书/学习/超级学习者.md",
-    "读书/学习/刻意练习.md",
-    "教程/神秘/Tulpa.md",
-    "手册/网站/博客/_sidebar.md",
-    "手册/网站/_sidebar.md",
-    "引用/案例/心理/学习/记忆.md",
-    "引用/案例/心理/学习/README.md",
-    "引用/案例/README.md",
+    "引用/资料/README.sync-conflict-20240102-141500-SXYZRSI.md",
+    "读书/写作/文心.md",
+    "读书/数学/数学家讲解小学数学.md",
+    "读书/生活/_sidebar.md",
+    "index.sync-conflict-20240102-141318-SXYZRSI.html",
+    "教程/考试/专业",
+    "教程/专业",
     "教程/神秘",
     "img/books/文心.jpg.crdownload",
     "img/books/文心.jpg",
@@ -229,11 +270,6 @@
     "Pasted image 20231201100611.png",
     "Pasted image 20231201100610.png",
     "引用/资料/学习/属性/~syncthing~记忆.sync-conflict-20231128-161138-KTXPNMX.md.tmp",
-    "引用/案例/心理/学习/~syncthing~专家和新手.sync-conflict-20231128-161138-KTXPNMX.md.tmp",
-    "手册/开发/~syncthing~docker.sync-conflict-20231110-095303-KTXPNMX.md.tmp",
-    "手册/PC/软件/~syncthing~未命名.md.tmp",
-    "手册/开发/~syncthing~docker.sync-conflict-20231109-095815-KTXPNMX.md.tmp",
-    "404.html",
     "img/favicon-32x32.png",
     "img/apple-touch-icon.png",
     "img/android-chrome-512x512.png",

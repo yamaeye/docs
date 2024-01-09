@@ -46,6 +46,28 @@ div#app:empty::before {
     z-index: 999999;
 }
 
+.pin {
+  display: inline-block;
+  position: relative;
+}
+
+.hide {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 250px;
+  width: 500px;
+  transform: translateX(-50%);
+  padding: 8px;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.pin:hover .hide {
+  display: block;
+}
+
 .search a:hover {
     color: var(--theme-color, #C00000);
 }

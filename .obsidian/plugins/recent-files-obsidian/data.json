@@ -1,16 +1,48 @@
 {
   "recentFiles": [
     {
-      "basename": "Github",
-      "path": "手册/开发/Github.md"
+      "basename": "秘密",
+      "path": "读书/神秘/秘密.md"
     },
     {
-      "basename": "漫画",
-      "path": "教程/艺术/漫画.md"
+      "basename": "README",
+      "path": "读书/神秘/README.md"
+    },
+    {
+      "basename": "_sidebar",
+      "path": "读书/神秘/_sidebar.md"
+    },
+    {
+      "basename": "README",
+      "path": "读书/README.md"
+    },
+    {
+      "basename": "基金",
+      "path": "生活/理财/基金.md"
+    },
+    {
+      "basename": "Excel",
+      "path": "手册/PC/软件/Excel.md"
+    },
+    {
+      "basename": "文心",
+      "path": "读书/写作/文心.md"
     },
     {
       "basename": "图书情报学",
       "path": "教程/专业/图书情报学.md"
+    },
+    {
+      "basename": "Github",
+      "path": "手册/开发/Github.md"
+    },
+    {
+      "basename": "小学一年级",
+      "path": "教程/考试/语文/小学一年级.md"
+    },
+    {
+      "basename": "漫画",
+      "path": "教程/艺术/漫画.md"
     },
     {
       "basename": "Navicat",
@@ -21,20 +53,8 @@
       "path": "手册/PC/软件/README.md"
     },
     {
-      "basename": "秘密",
-      "path": "读书/神秘/秘密.md"
-    },
-    {
-      "basename": "秘密-总结",
-      "path": "读书/神秘/秘密-总结.md"
-    },
-    {
       "basename": "书单",
       "path": "教程/考试/数学/书单.md"
-    },
-    {
-      "basename": "小学一年级",
-      "path": "教程/考试/语文/小学一年级.md"
     },
     {
       "basename": "_sidebar",
@@ -93,20 +113,12 @@
       "path": "读书/心理/社会心理学.sync-conflict-20240102-141414-SXYZRSI.md"
     },
     {
-      "basename": "文心",
-      "path": "读书/写作/文心.md"
-    },
-    {
       "basename": "数学家讲解小学数学",
       "path": "读书/数学/数学家讲解小学数学.md"
     },
     {
       "basename": "_sidebar",
       "path": "读书/生活/_sidebar.md"
-    },
-    {
-      "basename": "_sidebar",
-      "path": "读书/神秘/_sidebar.md"
     },
     {
       "basename": "数据分析",
@@ -187,18 +199,6 @@
     {
       "basename": "宫位",
       "path": "手册/占星/宫位.md"
-    },
-    {
-      "basename": "_sidebar",
-      "path": "手册/占星/_sidebar.md"
-    },
-    {
-      "basename": "符号",
-      "path": "手册/词库/符号.md"
-    },
-    {
-      "basename": "README",
-      "path": "读书/学习/README.md"
     }
   ],
   "omittedPaths": [],

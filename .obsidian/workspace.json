@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "读书/神秘/秘密.md",
+                "file": "读书/心理/社会心理学.sync-conflict-20240102-141414-SXYZRSI.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "conflict",
+                "query": "confli",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -86,7 +86,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -106,7 +107,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "读书/神秘/秘密.md"
+                "file": "读书/心理/社会心理学.sync-conflict-20240102-141414-SXYZRSI.md"
               }
             }
           },
@@ -116,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "读书/神秘/秘密.md",
+                "file": "读书/心理/社会心理学.sync-conflict-20240102-141414-SXYZRSI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "读书/神秘/秘密.md",
+                "file": "读书/心理/社会心理学.sync-conflict-20240102-141414-SXYZRSI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -191,10 +192,10 @@
   },
   "active": "116a4fb77ecccfeb",
   "lastOpenFiles": [
+    "读书/神秘/秘密.md",
     "读书/神秘/README.md",
     "读书/神秘/_sidebar.md",
     "读书/README.md",
-    "读书/神秘/秘密.md",
     "生活/理财/基金.md",
     "读书/神秘/秘密-总结.md",
     "手册/PC/软件/Excel.md",
